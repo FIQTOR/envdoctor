@@ -1,0 +1,37 @@
+{
+  "name": "envdoctor",
+  "version": "0.1.0",
+  "description": "Offline-first, privacy-first development environment doctor (web UI + zero-dependency CLI).",
+  "license": "MIT",
+  "type": "module",
+  "keywords": ["developer-tools", "diagnostics", "environment", "doctor", "offline", "privacy"],
+  "bin": { "envdoctor": "cli/envdoctor.mjs" },
+  "files": ["cli"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "cli": "node cli/envdoctor.mjs"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.0.20",
+    "@fontsource/plus-jakarta-sans": "^5.0.21",
+    "lucide-react": "^0.400.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2",
+    "vite": "^5.3.1",
+    "vitest": "^2.0.0"
+  }
+}
